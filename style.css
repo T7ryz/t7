@@ -145,40 +145,6 @@ section {
 }
 .contact-box {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 20px 0;
-}
-
-.contact-box h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
-  font-weight: 700;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-  color: #000;
-  font-size: 22px;
-  padding: 10px 15px;
-  border: 2px solid #000;
-  border-radius: 12px;
-  transition: 0.2s;
-}
-
-.contact-item:hover {
-  transform: scale(1.05);
-}
-
-.contact-item .icon {
-  width: 32px;
-  height: 32px;
-}
-.contact-box {
-  display: flex;
   gap: 20px;
   align-items: center;
   margin-top: 20px;
@@ -187,7 +153,7 @@ section {
 .contact-icon img {
   width: 48px;
   height: 48px;
-  filter: brightness(0); /* bikin icon jadi hitam */
+  filter: brightness(0); /* bikin ikon hitam */
   transition: 0.3s ease;
 }
 
