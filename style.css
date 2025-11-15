@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1 {
+	font-family: "Anton", sans-serif;
+	font-size: 10vw;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 1;
+	letter-spacing: -2px;
+	padding-top: 0.25rem;
+}
+h2 {
+	font-family: "Poppins", sans-serif;
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+p {
+	font-family: "Poppins", sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+}
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100svh;
+	overflow: hidden;
+}
+.progress-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 8px;
+	transform: scaleX(0%);
+	transform-origin: center left;
+	background-color: #fff;
+	will-change: transform;
+	z-index: 2;
+}
+.progress-counter {
+	position: fixed;
+	bottom: 1rem;
+	right: 2.5rem;
+	color: #fff;
+	z-index: 2;
+	text-shadow: 5px 5px 15px rgb(0 0 0 / 15%);
+}
+.scroller {
+	position: relative;
+	width: 700vw;
+	height: 100svh;
+	display: flex;
+	will-change: transform;
+	transform: translateX(0);
+}
+section {
+	position: relative;
+	height: 100svh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.intro,
+.hero-img,
+.about,
+.banner-img,
+.story,
+.outro {
+	width: 90vw;
+}
+.header,
+.concept-img {
+	width: 100vw;
+}
+.intro {
+	padding: 2rem;
+	background-color: #000;
+	color: #f6f6f6;
+}
+.header {
+	padding: 2rem;
+	background-color: #f4d35e;
+	color: #421c06;
+}
+.about {
+	padding: 4rem 3rem 1rem 2rem;
+	background-color: #f95738;
+	color: #481107;
+}
+.story {
+	padding: 4rem 2rem 2rem 2rem;
+	background-color: #ee964b;
+	color: #3f170b;
+}
+.outro {
+	background-color: #ebebd3;
+	color: #302418;
+	padding: 2rem;
+}
+.about,
+.intro,
+.header,
+.story {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.intro,
+.about,
+.story {
+	flex-direction: column;
+}
+.header h1 {
+	font-size: 10vw;
+}
+.story h1 {
+	padding-top: 0;
+}
+.about .row {
+	display: flex;
+	justify-content: space-between;
+}
+.about .row p {
+	width: 50%;
+	margin-bottom: 1rem;
+}
+.about .row .copy {
+	flex: 3;
+}
+.about .row .img {
+	flex: 3;
+	aspect-ratio: 7/5;
+}
