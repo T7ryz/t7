@@ -177,3 +177,21 @@ section {
   width: 32px;
   height: 32px;
 }
+.contact-box {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-icon img {
+  width: 48px;
+  height: 48px;
+  filter: brightness(0); /* bikin icon jadi hitam */
+  transition: 0.3s ease;
+}
+
+.contact-icon img:hover {
+  transform: scale(1.15);
+  opacity: 0.7;
+}
